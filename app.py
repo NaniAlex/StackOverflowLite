@@ -3,7 +3,6 @@ from flask import Flask, render_template, flash, redirect, session, request, url
 from flask_sqlalchemy import SQLAlchemy 
 from flask_security import Security, SQLAlchemyUserDatastore, UserMixin, RoleMixin, login_required
 
-#from flask_mysql import MySQL
 from wtforms import Form, StringField, TextAreaField, PasswordField, validators
 from passlib.hash import sha256_crypt
 from functools import wraps
@@ -12,7 +11,7 @@ from functools import wraps
 app = Flask (__name__) 
 
      #set the db objects
-app.config['SQLALCHEMY_DATABASE_URI'] ='postgresql://postgres:NaNiAl#x@localhost/stackoverflowlite'
+app.config['SQLALCHEMY_DATABASE_URI'] ='postgresql://postgres:********@localhost/stackoverflowlite'
 app.config['SECRET_KEY'] = 'super-secret'
 app.config['SECURITY_REGISTERABLE'] = True
 
