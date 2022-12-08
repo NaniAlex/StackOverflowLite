@@ -1,6 +1,6 @@
 Babel==2.6.0
 blinker==1.4
-certifi==2018.8.24
+certifi==2022.12.7
 click==6.7
 Flask==1.0.2
 Flask-BabelEx==0.9.3
